@@ -1,0 +1,21 @@
+@import "compass";
+@import "susy";
+@import 'photoshop-drop-shadow';
+$susy:(
+        container :1000px,
+        columns: 12,
+
+
+        debug: (
+                image: show,
+                color: rgba(#66f, .65),
+                output : overlay
+
+        )
+);
+
+
+$ico-layout:smart;
+@import "ico/*.png";
+$ico-sprite-dimensions: true;
+@include all-ico-sprites;

@@ -1,9 +1,11 @@
-button{
-  font-family: $base-font;  
+%button {
+  display: inline-block;
+  padding: $button-padding;
+  font-size: $button-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-width: $button-border-width;
+  border-style: solid;
   cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  padding: 0;
-  border: none;
   text-align: center;
 }
