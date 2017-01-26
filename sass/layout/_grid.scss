@@ -1,15 +1,8 @@
-@import "compass";
-@import "susy";
-@import 'photoshop-drop-shadow';
 $susy:(
-	//container :1000px,
-	//columns: 12,  
-	//math: static,	
-  	//gutter-position: inside,
-    gutters: .1,
-    
+	container :1000px,
+	columns: 12,
   
-  debug: (
+    debug: (
     image: show,
     color: rgba(#66f, .65),
     output : overlay
@@ -17,7 +10,7 @@ $susy:(
   )
   );
 
-@include layout(12 (80px 10px) static);
+//@include layout(12 (80px 10px) static);
 .wrap{
 	@include container;
 }
