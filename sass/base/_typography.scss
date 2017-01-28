@@ -24,3 +24,10 @@ a{
 p{
 	line-height: $base-line-height;
 }
+.text-{
+	&center{
+		text-align: center;
+		position: relative;
+		z-index: 100;
+	}
+}
