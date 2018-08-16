@@ -1,5 +1,7 @@
 @each $font in
-				bebasneue_light
+				pts55f,
+				pt-sans-bold,
+				pt-sans-italic
 {
 	@include font-face('#{$font}', font-files('#{$font}.ttf', '#{$font}.eot','#{$font}.svg','#{$font}.woff'));
 }
@@ -9,24 +11,157 @@ body{
 	color: $base-font-color;
 	font-size: $base-font-size;	
 }
+h1,h2,h3,h4{
+	font-family: 'pt-sans-bold';
+	color: #4a4a4a;
 
-@each $h, $size in (h1: 87px, h2: 70px) {
+}
+@each $h, $size in (h1: 26px, h2: 22px, h3: 20px, h4: 18px) {
 	#{$h} {
 		@include adjust-font-size-to($size);
 	}
 }
+h1{
+	letter-spacing: -0.025em;
+	margin-bottom: 10px;
+}
+h4{
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+h2{
+	line-height: 18px;
+	margin-bottom: 20px;
+	a{
+		font-family: $base-font;
 
+	}
+}
 a{
 	@include link-colors($normal, $hover);
 	text-decoration: none;
+	&.enter{
+		font-size: 13px;
+		color: #656565;
+		position: relative;
+		text-decoration: none;
+		&:after{
+			content: '\203A';
+			color: #9c9c9c;
+			font-size: 18px;
+			position: relative;
+			margin-left: 10px;
+			text-decoration: none;
+			top: 2px;
+		}
+		span{
+			text-decoration: underline;
+		}
+	}
 }
 
 p{
 	line-height: $base-line-height;
+	margin-bottom: 15px;
 }
 .text-{
 	&center{
 		text-align: center;
-
 	}
 }
+b{
+	font-family: 'pt-sans-bold';
+}
+.text-right{
+	text-align: right;
+}
+.lowercase{
+	text-transform: lowercase;
+}
+.text-transform-none{
+	text-transform: none !important;
+}
+small{
+	font-size: 14px;
+	small{
+		font-size: 13px;
+	}
+}
+.red-text{
+	color: #c62924;
+}
+.text-upper{
+	text-transform: uppercase;
+
+.gray{
+color: #606060;}
+}
+.text-center{
+	text-align: center;
+}
+.light-gray{
+	 color: #8b8b8b;
+ }
+.litest-gray{
+	color: #4d4c4c;
+}
+.attention{
+	color: $attention;
+}
+.important{
+	color: $important;
+}
+.info{
+	color: $info;
+}
+.note{
+	color: $note;
+}
+em{
+	font-family: 'pt-sans-italic';
+}
+.pull-left{
+	display: inline-block;
+	float: left;
+}
+img.pull-left{
+	margin-right: $padd;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+time{
+	color: #808080;
+	font-size: 14px;
+}
+.gray-link{
+	a{
+		font-family: 'pts55f';
+		color: #636363;
+		&:hover{
+			color: #1b75cb;
+		}
+	}
+}
+.mb-15{
+	margin-bottom: 15px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+.mb-0{
+	margin-bottom: 0;
+}
+
+.m-a{
+	margin: auto;
+}
+ .num{
+	 font-size: 20px;
+ }
+ .smoller{
+	 font-size: 12px;
+	 margin-bottom: 0;
+	 line-height: 12px;
+ }
+

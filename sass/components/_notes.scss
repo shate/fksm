@@ -1,0 +1,26 @@
+.ico-notes{
+  @include circle(16px);
+  line-height: 16px;
+  color: #fff;
+  margin-right: 5px;
+  top: 2px;
+  &:before{
+    content: '!';
+    font-family: 'pt-sans-bold';
+    font-size: 11px;
+    position: absolute;
+    left: 6px;
+  }
+  &.attention{
+    background-color: $attention;
+  }
+  &.important{
+    background-color: $important;
+  }
+  &.info{
+    background-color: $info;
+  }
+  &.note{
+    background-color: $note;
+  }
+}

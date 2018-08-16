@@ -1,0 +1,19 @@
+.card{
+  border: 1px solid #d3d3d3;
+  padding-bottom: 25px;
+  &__header{
+    font-family: 'pt-sans-bold';
+    background-color: #f6f6f6;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #d3d3d3;
+
+  }
+  &__body{
+    padding: 25px 15px 15px;
+  }
+  &__footer{
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+table.blue-header{
+  width: 100%;
+  th{
+    font-family: 'pt-sans-bold';
+    background-color: $blue;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+  }
+  td{
+    border: 1px solid #d3d3d3;
+    padding: 15px;
+    vertical-align: top;
+    &:first-child{
+      width: 30%;
+    }
+    &:nth-child(2){
+      text-align: center;
+    }
+    &:last-child{
+      max-width: 50%;
+      width: 50%;
+    }
+    h4{
+      margin-bottom: 2px;
+
+    }
+  }
+}

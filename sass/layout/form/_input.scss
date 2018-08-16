@@ -1,0 +1,38 @@
+input[type=text], input[type=email], input[type=tel], textarea {
+  outline: none;
+  color: $base-font-color;
+  border: none;
+  padding: 0;
+  border: 1px solid #c3c3c3;
+  height: 37px;
+  border-radius: 5px;
+  padding-left: 10px;
+  position: relative;
+  box-sizing: border-box;
+  @include input-placeholder{
+    font-family: $base-font;
+    color: #4d4c4c;
+    font-size: 16px;
+  }
+}
+textarea{
+  height: auto;
+  resize: none;
+  overflow: auto;
+  padding-top: 10px !important;
+  @include input-placeholder{
+    font-family: 'pt-sans-italic';
+    color: #808080;
+    font-size: 16px;
+  }
+}
+
+.label-block{
+  label{
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type=text], input[type=email], input[type=tel], textarea{
+    width: 100%;
+  }
+}

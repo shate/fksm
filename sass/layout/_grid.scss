@@ -1,28 +1,25 @@
 $susy:(
-	container :1000px,
+	container :1200px,
 	columns: 12,
-  
-    debug: (
-    image: show,
-    color: rgba(#66f, .65),
-    output : overlay
-   
-  )
+	gutters: .25,
+
   );
 
 //@include layout(12 (80px 10px) static);
 .wrap{
 	@include container;
+	background-color: #fff;
+	height: 100%;
+	padding: 0 $padd;
 }
-.content{	
-	
+.content{
     padding: 0 0 $footerH;
-   
 	}
+
 aside{
 	@include span(3);
 }
-.inner{
+aside + .inner{
   @include span(9 last);
 }
 

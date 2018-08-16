@@ -1,0 +1,49 @@
+.bordered-block{
+  border: 2px solid;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 15px;
+  img{
+    margin-bottom: 0;
+  }
+  p{
+    color: $base-font-color ;
+    margin-bottom: 0;
+  }
+  article{
+    padding-top: 6px;
+  }
+  &.attention{
+    border-color: $attention;
+    .bordered-block__title{
+      color:$attention;
+      .ico-notes{
+        background-color: $attention;
+      }
+    }
+  }
+  &.important{
+    .bordered-block__title{
+      color:$important;
+      .ico-notes{
+        background-color: $important;
+      }
+    }
+  }
+  &.info{
+    .bordered-block__title{
+      color:$info;
+      .ico-notes{
+        background-color: $info;
+      }
+    }
+  }
+  &.note{
+    .bordered-block__title{
+      color:$note;
+      .ico-notes{
+        background-color: $note;
+      }
+    }
+  }
+}

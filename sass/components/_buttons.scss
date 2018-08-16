@@ -1,11 +1,27 @@
 %button {
+  font-family: 'pt-sans-bold';
+  color: #fff;
   display: inline-block;
-  padding: $button-padding;
   font-size: $button-font-size;
-  font-weight: bold;
   text-transform: uppercase;
-  border-width: $button-border-width;
-  border-style: solid;
+  border: none;
+  padding: 3px 27px;
   cursor: pointer;
   text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  transition: background-color, .2s;
+  text-decoration: none;
+  &:hover{
+    color: #fff;
+  }
+}
+
+.btn-blue{
+  @extend %button;
+  background-color: $blue;
+  &:hover{
+    background-color: $red;
+  }
 }
